@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="encriptador_texto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+</head>
+<body>
+    <div class="conteiner_main">
+        <div class="conteiner-left">
+            <div class="row row-image">
+                <img src="image/Logo.png" alt="" class="logo-image">
+                <img src="image/Logo_Celular.png" alt="" class="logo-celcular-image">
+            </div>
+            <div class="row row-text-ingresar">
+                <textarea name="" id="texto_ingresado" class="text-ingresar" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            </div>
+            <div class="row frame-1">
+                <div class="union-frame1">
+                    <img src="image/Vector.png" alt="" class="vecotr-image">
+                    <span class="texto-frame1"> Solo letras minúsculas y sin acentos</span>
+                </div>
+            </div>
+            <div class="row frame-3">
+                <button class="btn-encriptar" id="encriptar">Encriptar</button>
+                <button class="btn-desencriptar" id="desencriptar">Desencriptar</button>
+            </div>
+        </div>
+        <div class="conteiner-right">
+            
+            <div class="rectangulo"> <!--LA SEGUNDA CLASE rectangulo-texto-resultado SE MUESTRA CUANDO HAY TEXTO -->
+                <div id="vista_texto" style="display: none;">
+                    <div class="row-texto-resultado">
+                        <textarea class="texto-resultado" name="" id="texto_resultado" cols="30" rows="10" placeholder="Ingrese el texto que desees encriptar o desencriptar."></textarea>
+                    </div>
+                    <div class="row-btn-copiar">
+                        <button class="btn-copiar" id="copiar_texto">Copiar</button>
+                    </div>
+                </div>
+                <div id="vista_inicial">
+                    <div class="munheco" >
+                        <img src="image/Muñeco.png" alt="" srcset="">
+                    </div>
+                    <div class="frame-5">
+                        <div class="mensaje-texto">
+                            <span>Ningún mensaje fue encontrado</span>
+                        </div>
+                        <!-- <div > -->
+                            <textarea class="texto" name="" id="" cols="30" rows="10" placeholder="Ingrese el texto que desees encriptar o desencriptar."></textarea>
+                            <!-- <input type="text" name="" id=""> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="encriptador_texto.js"></script>
+</body>
+</html>
